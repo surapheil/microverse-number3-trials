@@ -2,8 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+    header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    padding: 1em;
+     }
+
+     @media only screen and (max-width: 600px) {
+  body {
+    background-color: rgb(205, 230, 173);
+  }
+}
+ #nav-bar {
+  display: flex;
+  flex-direction: column;
+ }
+    </style>
   </head>
 
   <body>
@@ -23,9 +47,10 @@
           </li>
         </ul>
      </nav>
-     <form id="form">
+     <form id="form" action="https://www.freecodecamp.com/email-submit">
       <label>Handcrafted, home-made masterpieces</label><br>
-      <input id="email" type="email" placeholder="Enter your email address" required>
+      <input id="email" type="email" name="email" placeholder="Enter your email address" required>
+      <input id="submit" type="submit" value="GET STARTED">
      </form>
      <iframe id="video" src="https://youtu.be/y8Yv4pnO7qc" height="200" width="300" ></iframe>
     </header>
